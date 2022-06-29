@@ -9,7 +9,7 @@ export const theme = {
 		primaryGray: '#606977',
     bgColor: "#38404b",
 		borderColor: '#353232cc',
-    secondagyBgColor: "#1d2228",
+    secondaryBgColor: "#1d2228",
     textColor: "#94ADCF",
     inputColor: "#9ccaf5",
   },

@@ -21,6 +21,8 @@ export const Content = styled.main`
 		padding: 1.5rem 0;
 		margin-top: -7rem;
   }
+
+	
 `;
 
 export const Header = styled.div`
@@ -36,7 +38,8 @@ export const Header = styled.div`
 
 export const InputContent = styled.div`
 	display: flex;
-	gap: .2rem;
+	gap: .5rem;
+	width: 40%;
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: flex-end;

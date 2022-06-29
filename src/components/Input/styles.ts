@@ -1,11 +1,6 @@
-import { DetailedHTMLProps, InputHTMLAttributes } from "react";
 import styled from "styled-components";
 
-interface StyledInputProps
-  extends DetailedHTMLProps<
-    InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  > {}
+
 
 export const Container = styled.div`
   display: flex;
@@ -13,6 +8,10 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.colors.primaryBlue};
   width: 100%;
   font-size: 20px;
+	p{
+		color: ${({ theme }) => theme.colors.primaryRed};
+		font-size: 1rem;
+	}
 `;
 
 export const StyledInput = styled.input`
@@ -22,10 +21,10 @@ export const StyledInput = styled.input`
 	font-weight: bold;
 	border-radius: 5px;
 	padding: .5rem;
-	width: 20rem;
+	width: 100%;
 	
 	@media (max-width: 800px) {
-		width: 17rem;
+		width: 100%;
 	}	
 	
 `;

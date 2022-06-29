@@ -34,8 +34,24 @@ export const AvatarContent = styled.div`
 	margin-left: 5rem;
 	justify-content: flex-start;
 	@media (max-width: 800px) {
-		padding: .5rem;
-		
+		padding: .5rem;		
 		margin-left: 0;
 	}
+
+	
 `;
+
+export const LoginButton = styled.button`
+	border: none;
+	background-color: ${({ theme }) => theme.colors.textColor};
+	font-size: .8rem;
+	font-weight: 600;
+	padding: .25rem;
+	border-radius: 1rem;
+	cursor: pointer;
+
+	transition: 100ms;
+	&:hover{
+		background-color: ${({ theme }) => theme.colors.bgColor};;
+	}
+`

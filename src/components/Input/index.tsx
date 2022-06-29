@@ -5,14 +5,17 @@ import { Container, StyledInput } from "./styles"
 export interface InputProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>{
 	label?: string
 	type?: string
+	error?: string
+	
 }
 
 
-export const Input = ({label, type}: InputProps) => {
+export const Input = ({label, error, type, onChange}: InputProps) => {
 	return(
 		<Container>
 			{label}
-			<StyledInput type={type}/>
+			<StyledInput type={type} onChange={onChange}/>
+			<p>{error}</p>
 		</Container>
 	)
 }
